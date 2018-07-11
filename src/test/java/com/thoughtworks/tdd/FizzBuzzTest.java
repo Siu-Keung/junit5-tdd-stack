@@ -13,7 +13,7 @@ public class FizzBuzzTest {
         int number = 1;
         //when
         FizzBuzz fizzBuzz = new FizzBuzz();
-        String str = fizzBuzz.getSayNumber(number);
+        String str = fizzBuzz.sayNumber(number);
         //then
         assertThat(str).isEqualTo("1");
     }
@@ -24,7 +24,7 @@ public class FizzBuzzTest {
         int number = 3;
         //when
         FizzBuzz fizzBuzz = new FizzBuzz();
-        String str = fizzBuzz.getSayNumber(number);
+        String str = fizzBuzz.sayNumber(number);
         //then
         assertThat(str).isEqualTo("Fizz");
     }
@@ -35,7 +35,7 @@ public class FizzBuzzTest {
         int number = 5;
         //when
         FizzBuzz fizzBuzz = new FizzBuzz();
-        String str = fizzBuzz.getSayNumber(number);
+        String str = fizzBuzz.sayNumber(number);
         //then
         assertThat(str).isEqualTo("Buzz");
     }
@@ -46,7 +46,7 @@ public class FizzBuzzTest {
         int number = 7;
         //when
         FizzBuzz fizzBuzz = new FizzBuzz();
-        String str = fizzBuzz.getSayNumber(number);
+        String str = fizzBuzz.sayNumber(number);
         //then
         assertThat(str).isEqualTo("Whizz");
     }
@@ -57,7 +57,7 @@ public class FizzBuzzTest {
         int number = 15;
         //when
         FizzBuzz fizzBuzz = new FizzBuzz();
-        String str = fizzBuzz.getSayNumber(number);
+        String str = fizzBuzz.sayNumber(number);
         //then
         assertThat(str).isEqualTo("FizzBuzz");
     }
@@ -67,7 +67,7 @@ public class FizzBuzzTest {
         int number = 21;
         //when
         FizzBuzz fizzBuzz = new FizzBuzz();
-        String str = fizzBuzz.getSayNumber(number);
+        String str = fizzBuzz.sayNumber(number);
         //then
         assertThat(str).isEqualTo("FizzWhizz");
     }
@@ -77,7 +77,7 @@ public class FizzBuzzTest {
         int number = 35;
         //when
         FizzBuzz fizzBuzz = new FizzBuzz();
-        String str = fizzBuzz.getSayNumber(number);
+        String str = fizzBuzz.sayNumber(number);
         //then
         assertThat(str).isEqualTo("BuzzWhizz");
     }
@@ -87,7 +87,7 @@ public class FizzBuzzTest {
         int number = 105;
         //when
         FizzBuzz fizzBuzz = new FizzBuzz();
-        String str = fizzBuzz.getSayNumber(number);
+        String str = fizzBuzz.sayNumber(number);
         //then
         assertThat(str).isEqualTo("FizzBuzzWhizz");
     }

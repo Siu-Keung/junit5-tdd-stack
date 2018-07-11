@@ -8,7 +8,7 @@ import sun.reflect.generics.reflectiveObjects.NotImplementedException;
  */
 public class FizzBuzz {
 
-    public String getSayNumber(int number) {
+    public String sayNumber(int number) {
         StringBuffer stringBuffer = new StringBuffer();
         if(number%3==0){
             stringBuffer.append("Fizz");
