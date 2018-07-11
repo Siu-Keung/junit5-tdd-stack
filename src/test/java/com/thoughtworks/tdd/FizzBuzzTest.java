@@ -81,4 +81,14 @@ public class FizzBuzzTest {
         //then
         assertThat(str).isEqualTo("BuzzWhizz");
     }
+    @Test
+    public void should_get__FizzBuzzWhizz_when_given_357(){
+        //given
+        int number = 105;
+        //when
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String str = fizzBuzz.getSayNumber(number);
+        //then
+        assertThat(str).isEqualTo("FizzBuzzWhizz");
+    }
 }
