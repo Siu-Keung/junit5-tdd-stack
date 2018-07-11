@@ -1,7 +1,9 @@
 package com.thoughtworks.tdd;
 
 import org.junit.jupiter.api.Test;
-import static org.fest.assertions.api.Assertions.assertThat;
+
+import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.MatcherAssert.assertThat;
 /**
  * @author Dylan Wei
  * @date 2018-07-11 10:55
@@ -15,7 +17,7 @@ public class FizzBuzzTest {
         FizzBuzz fizzBuzz = new FizzBuzz();
         String str = fizzBuzz.sayNumber(number);
         //then
-        assertThat(str).isEqualTo("1");
+        assertThat(str, is("1"));
     }
 
     @Test
@@ -26,7 +28,7 @@ public class FizzBuzzTest {
         FizzBuzz fizzBuzz = new FizzBuzz();
         String str = fizzBuzz.sayNumber(number);
         //then
-        assertThat(str).isEqualTo("Fizz");
+        assertThat(str, is("Fizz"));
     }
 
     @Test
@@ -37,7 +39,7 @@ public class FizzBuzzTest {
         FizzBuzz fizzBuzz = new FizzBuzz();
         String str = fizzBuzz.sayNumber(number);
         //then
-        assertThat(str).isEqualTo("Buzz");
+        assertThat(str, is("Buzz"));
     }
 
     @Test
@@ -48,7 +50,7 @@ public class FizzBuzzTest {
         FizzBuzz fizzBuzz = new FizzBuzz();
         String str = fizzBuzz.sayNumber(number);
         //then
-        assertThat(str).isEqualTo("Whizz");
+        assertThat(str, is("Whizz"));
     }
 
     @Test
@@ -59,7 +61,7 @@ public class FizzBuzzTest {
         FizzBuzz fizzBuzz = new FizzBuzz();
         String str = fizzBuzz.sayNumber(number);
         //then
-        assertThat(str).isEqualTo("FizzBuzz");
+        assertThat(str, is("FizzBuzz"));
     }
     @Test
     public void should_get__FizzWhizz_when_given_21(){
@@ -69,7 +71,7 @@ public class FizzBuzzTest {
         FizzBuzz fizzBuzz = new FizzBuzz();
         String str = fizzBuzz.sayNumber(number);
         //then
-        assertThat(str).isEqualTo("FizzWhizz");
+        assertThat(str, is("FizzWhizz"));
     }
     @Test
     public void should_get__BuzzWhizz_when_given_35(){
@@ -79,7 +81,7 @@ public class FizzBuzzTest {
         FizzBuzz fizzBuzz = new FizzBuzz();
         String str = fizzBuzz.sayNumber(number);
         //then
-        assertThat(str).isEqualTo("BuzzWhizz");
+        assertThat(str, is("BuzzWhizz"));
     }
     @Test
     public void should_get__FizzBuzzWhizz_when_given_357(){
@@ -89,6 +91,6 @@ public class FizzBuzzTest {
         FizzBuzz fizzBuzz = new FizzBuzz();
         String str = fizzBuzz.sayNumber(number);
         //then
-        assertThat(str).isEqualTo("FizzBuzzWhizz");
+        assertThat(str, is("FizzBuzzWhizz"));
     }
 }
