@@ -13,6 +13,9 @@ public class FizzBuzz {
         if(number%3==0){
             stringBuffer.append("Fizz");
         }
+        if(number%5==0){
+            stringBuffer.append("Buzz");
+        }
         return stringBuffer.length()==0?number + "":stringBuffer.toString();
     }
 }
