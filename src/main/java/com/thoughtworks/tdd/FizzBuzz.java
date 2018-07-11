@@ -11,8 +11,8 @@ public class FizzBuzz {
     public String getSayNumber(int number) {
         StringBuffer stringBuffer = new StringBuffer();
         if(number%3==0){
-            stringBuffer.append("");
+            stringBuffer.append("Fizz");
         }
-        return stringBuffer.append(number).toString();
+        return stringBuffer.length()==0?number + "":stringBuffer.toString();
     }
 }
