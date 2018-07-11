@@ -17,4 +17,58 @@ public class FizzBuzzTest {
         //then
         assertThat(str).isEqualTo("1");
     }
+
+    @Test
+    public void should_get__Fizz_when_given_three(){
+        //given
+        int number = 3;
+        //when
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String str = fizzBuzz.getSayNumber(number);
+        //then
+        assertThat(str).isEqualTo("Fizz");
+    }
+
+    @Test
+    public void should_get__Buzz_when_given_five(){
+        //given
+        int number = 5;
+        //when
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String str = fizzBuzz.getSayNumber(number);
+        //then
+        assertThat(str).isEqualTo("Buzz");
+    }
+
+    @Test
+    public void should_get__Whizz_when_given_seven(){
+        //given
+        int number = 7;
+        //when
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String str = fizzBuzz.getSayNumber(number);
+        //then
+        assertThat(str).isEqualTo("Whizz");
+    }
+
+    @Test
+    public void should_get__FizzBuzz_when_given_seven(){
+        //given
+        int number = 15;
+        //when
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String str = fizzBuzz.getSayNumber(number);
+        //then
+        assertThat(str).isEqualTo("FizzBuzz");
+    }
+    @Test
+    public void should_get__FizzWhizz_when_given_seven(){
+        //given
+        int number = 21;
+        //when
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String str = fizzBuzz.getSayNumber(number);
+        //then
+        assertThat(str).isEqualTo("FizzWhizz");
+    }
 }
