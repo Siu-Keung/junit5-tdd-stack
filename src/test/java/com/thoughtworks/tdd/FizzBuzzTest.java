@@ -52,7 +52,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void should_get__FizzBuzz_when_given_seven(){
+    public void should_get__FizzBuzz_when_given_15(){
         //given
         int number = 15;
         //when
@@ -62,7 +62,7 @@ public class FizzBuzzTest {
         assertThat(str).isEqualTo("FizzBuzz");
     }
     @Test
-    public void should_get__FizzWhizz_when_given_seven(){
+    public void should_get__FizzWhizz_when_given_21(){
         //given
         int number = 21;
         //when
@@ -70,5 +70,15 @@ public class FizzBuzzTest {
         String str = fizzBuzz.getSayNumber(number);
         //then
         assertThat(str).isEqualTo("FizzWhizz");
+    }
+    @Test
+    public void should_get__BuzzWhizz_when_given_35(){
+        //given
+        int number = 35;
+        //when
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String str = fizzBuzz.getSayNumber(number);
+        //then
+        assertThat(str).isEqualTo("BuzzWhizz");
     }
 }
