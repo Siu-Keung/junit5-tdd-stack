@@ -9,6 +9,9 @@ import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 public class FizzBuzz {
 
     public String sayNumber(int number) {
+        if(String.valueOf(number).contains("3"))
+            return "Fizz";
+
         StringBuffer stringBuffer = new StringBuffer();
         if(number%3==0){
             stringBuffer.append("Fizz");

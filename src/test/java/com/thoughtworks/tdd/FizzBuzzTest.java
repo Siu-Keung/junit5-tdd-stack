@@ -74,17 +74,7 @@ public class FizzBuzzTest {
         assertThat(str, is("FizzWhizz"));
     }
     @Test
-    public void should_get__BuzzWhizz_when_given_35(){
-        //given
-        int number = 35;
-        //when
-        FizzBuzz fizzBuzz = new FizzBuzz();
-        String str = fizzBuzz.sayNumber(number);
-        //then
-        assertThat(str, is("BuzzWhizz"));
-    }
-    @Test
-    public void should_get__FizzBuzzWhizz_when_given_357(){
+    public void should_get__FizzBuzzWhizz_when_given_105(){
         //given
         int number = 105;
         //when
@@ -92,5 +82,17 @@ public class FizzBuzzTest {
         String str = fizzBuzz.sayNumber(number);
         //then
         assertThat(str, is("FizzBuzzWhizz"));
+    }
+
+    @Test
+    public void should_get_Fizz_when_given_35(){
+        //given
+        int number = 35;
+        //when
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String str = fizzBuzz.sayNumber(number);
+        //then
+        String expected = "Fizz";
+        assertThat(str, is(expected));
     }
 }
